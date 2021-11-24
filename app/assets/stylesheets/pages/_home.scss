@@ -2,9 +2,11 @@
   min-height: 700px;
   background: transparent;
   object-fit: cover;
+  position: relative;
 }
 
 .text {
+  color: white;
   text-transform: uppercase;
   h3 {
     font-family:'Lato';

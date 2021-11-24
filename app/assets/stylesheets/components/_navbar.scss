@@ -1,9 +1,11 @@
 .navbar-lewagon {
-  justify-content: space-between;
+  justify-content: center;
   background: white;
+  display: flex;
   font-family: $body-font;
   letter-spacing: 1px;
   z-index: 3;
+  flex-direction: column !important;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -33,7 +35,8 @@
 }
 .navbar-expand-sm {
     flex-flow: wrap !important;
-    justify-content: none;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
 #navbarSupportedContent {
