@@ -1,0 +1,175 @@
+.footer {
+  background: #561B16;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-height: 130px;
+  padding: 0px 50px;
+  color: rgba(0,0,0,0.3);
+}
+.footer-contact {
+  display: inline;
+  align-items: center;
+  p {
+    font-size:15px;
+    color:white;
+    letter-spacing: 1px;
+  }
+}
+
+.footer-text {
+    a {
+    font-size:15px;
+    color:white;
+    letter-spacing: 1px;
+  }
+  a:hover {
+    text-decoration: underline;
+    color: grey;
+  }
+}
+
+.footer-nav {
+  padding:0;
+  margin-bottom: 0;
+  margin-top: 8px;
+  margin-left: 40px;
+}
+
+.footer-copyright {
+  display: flex;
+  color:white;
+  justify-content: center;
+  align-items: center;
+  ul{
+    list-style-type: none;
+  }
+  a {
+  font-size: 14px;
+  color: white;
+  }
+  a:hover {
+    color: grey;
+  }
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.footer-links a:hover {
+  opacity: 1;
+}
+
+
+.footer .fa-instagram-square {
+  color:white;
+    font-size: 35px;
+  padding: 0px 20px;
+}
+
+.footer .fa-facebook-square {
+  color:white;
+    font-size: 35px;
+  padding: 0px 20px;
+}
+
+.footer .fa-envelope-square {
+  color:white;
+    font-size: 35px;
+  padding: 0px 20px;
+}
+
+
+.footer .fa-phone-square-alt {
+  color:white;
+  font-size: 35px;
+  padding: 0px 20px;
+}
+
+@media (max-width: 720px) {
+  .footer-nav-links {
+   display:none;
+  }
+
+  .footer-text {
+    p {
+      margin-bottom: 0;
+    }
+    a {
+      font-size: 10px;
+      margin-bottom: 0;
+    }
+  }
+
+  .footer-image {
+    display:none;
+  }
+
+  .footer {
+    padding: 0 10px;
+  }
+
+  .footer-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+        p {
+      font-size:10px;
+    }
+  }
+  .footer .fa-instagram-square {
+    color:white;
+    font-size: 25px;
+    padding: 0px 5px;
+}
+
+  .footer .fa-facebook-square {
+    color:white;
+    font-size: 25px;
+    padding: 0px 5px;
+  }
+
+.footer .fa-envelope-square {
+    color:white;
+    font-size: 25px;
+    padding: 0px 5px;
+}
+
+
+.footer .fa-phone-square-alt {
+  color:white;
+  font-size: 25px;
+  padding: 0px 5px;
+}
+}
+
+@media (max-width: 1024px) {
+  .footer-nav-links {
+    display: none;
+  }
+    .footer-text {
+    p {
+      margin-bottom: 10;
+      font-size: 12px;
+    }
+    a {
+      font-size: 12px;
+      margin-bottom: 0;
+    }
+  }
+  .footer-image {
+    img {
+    max-width: 210px impo !important;
+    padding: 10px;
+    }
+  }
+  .footer {
+    padding: 0px 15px;
+  }
+}
