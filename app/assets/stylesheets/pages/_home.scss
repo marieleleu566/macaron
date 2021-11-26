@@ -25,6 +25,27 @@
     flex-direction: column;
 }
 
+.order-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+.button-special {
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #5B1B14;
+  text-transform: uppercase;
+  a {
+    color: white;
+    letter-spacing: 1px;
+    text-decoration: none;
+  }
+  &:hover {
+      box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.3);
+  }
+}
+}
+
 .text-special {
   .text-inside {
     background-color: white;
@@ -39,6 +60,7 @@
     letter-spacing: 2px;
   }
   p {
+    font-family: "Arbutus Slab", serif;
     font-size: 25px;
   }
   h4 {
