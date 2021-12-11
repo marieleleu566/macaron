@@ -1,0 +1,51 @@
+<div class="home">
+  <div class="parallax-window">
+    <%= image_tag 'home1.jpg' %>
+    <div class="text">
+      <p>ABOUT US</p>
+      <h3>Good quality baking<br> for a reasonable price</h3>
+    </div>
+  </div>
+</div>
+<div class="container-macaron">
+  <div class="photo-left">
+    <div class="photo">
+      <%= image_tag 'ben.jpg', height: '550px'%>
+    </div>
+    <div class="text-box">
+      <div class="header-text">
+        <h1>Benjamin Pallais</h1>
+        <h2 style='color:#5B1B14;'>Founder of Monsieur Macaron</h2>
+      </div>
+      <div id='boxinside'>
+        <div class='boxtext'>
+          <p class='question'><b>Who are you?</b></p>
+          <p>Bonjour, I am Benjamin. Creator of Monsieur Macaron, foodie, and ex rugby player.</p>
+          <br>
+          <p class='question'><b>Why did you chose New Zealand?</b></p>
+          <p>Probably, for the love of rugby and the attractions around the myth of the All Blacks. I first visited New Zealand in 2007, when I was 21 years old. Since that trip, I have been motivated to become a Kiwi.</p>
+          <br>
+          <p class='question'><b>Why did you become a Pastry chef?</b></p>
+          <p>Probably the best job to express myself creatively with my patisserie, to allow me to travel around the world, and to provide happiness to my customers.</p>
+          <br>
+          <p class='question'><b>Why have you created Monsieur Macaron Ltd? Why did you choose macarons?</b></p>
+          <p>In my opinion, Macarons are the most glamorous biscuit in the world. As a Parisien, the macaron is the most trendy patisserie and is well known to Kiwi people. The creation of the company gave me the opportunity to fully express myself, manage my own relationships with customers/partners, and have the honour of helping the NZ Food culture.</p>
+          <br>
+          <p class='question'><b>What's the best part of your job?</b></p>
+          <p>Having the pleasure to sell my pasteries and meet my customers at the Farmers Market in Hastings every Sunday.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+
+parentHeight = document.getElementById('boxinside').offsetHeight;
+  if (parentHeight > 500){
+    console.log(parentHeight)
+    document.querySelector('#boxinside').style.position = "inherit";
+  } else {
+    document.querySelector('#boxinside').style.position = "absolute";
+  }
+</script>

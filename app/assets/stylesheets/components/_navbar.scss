@@ -1,11 +1,10 @@
 .navbar-lewagon {
-  justify-content: center;
+  justify-content: space-between;
   background: white;
   display: flex;
   font-family: $body-font;
   letter-spacing: 1px;
   z-index: 3;
-  flex-direction: column !important;
 }
 
 .navbar-lewagon .navbar-collapse {
