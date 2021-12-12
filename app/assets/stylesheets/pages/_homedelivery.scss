@@ -1,0 +1,115 @@
+#boxinside-del {
+  position: inherit;
+  background-color: white;
+  width: 100%;
+p {
+  margin-bottom: 0px;
+}
+@include from-medium {
+  position: absolute;
+  background-color: white;
+  right: 2%;
+  top: 30%;
+  width: 50%;
+}
+}
+
+.boxtext-delivery {
+  padding: 30px;
+  h3 {
+    color: #5B1B14;
+    letter-spacing: 0.05em;
+  }
+}
+
+.photo {
+  img {
+  width: 100%;
+  object-fit: cover;
+  }
+}
+
+.pay {
+  text-align: center;
+  margin-top: 100px;
+    h1 {
+    text-transform: uppercase;
+    color: #5B1B14;
+    letter-spacing: 0.05em;
+  }
+  h3 {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 300;
+  }
+}
+
+.biege {
+  background-color: #F8F5F0;
+  margin-top: 0px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-del-info {
+  text-align: center;
+  width: 85%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info {
+  flex-wrap: wrap;
+  bottom: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 30px;
+      img {
+        width: auto;
+  }
+  @include from-medium {
+    flex-direction: row;
+  }
+}
+
+.info-specific {
+    margin-bottom: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    p:first-of-type {
+      font-size: 20px;
+      color: #5B1B14;
+      font-weight: 300;
+    }
+    @include from-medium-high {
+      margin-bottom: 10px;
+    }
+}
+
+.button-special {
+  margin: 50px;
+  padding: 10px 20px;
+  background-color: white;
+  border: 1px solid #5B1B14;
+  a {
+    color: #5B1B14;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  &:hover {
+    a {
+      color: white;
+    }
+    background-color:#5B1B14;
+  }
+}

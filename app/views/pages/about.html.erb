@@ -1,6 +1,6 @@
 <div class="home">
   <div class="parallax-window">
-    <%= image_tag 'home1.jpg' %>
+    <%= image_tag 'mm1.png' %>
     <div class="text">
       <p>ABOUT US</p>
       <h3>Good quality baking<br> for a reasonable price</h3>
@@ -9,7 +9,7 @@
 </div>
 <div class="container-macaron">
   <div class="photo-left">
-    <div class="photo">
+    <div class="photo-ben">
       <%= image_tag 'ben.jpg', height: '550px'%>
     </div>
     <div class="text-box">
@@ -38,14 +38,17 @@
     </div>
   </div>
 </div>
-
 <script>
 
-parentHeight = document.getElementById('boxinside').offsetHeight;
-  if (parentHeight > 500){
-    console.log(parentHeight)
-    document.querySelector('#boxinside').style.position = "inherit";
-  } else {
-    document.querySelector('#boxinside').style.position = "absolute";
-  }
+function resize () {
+  parentHeight = document.getElementById('boxinside').offsetHeight;
+    if (parentHeight > 500){
+      console.log(parentHeight)
+      document.querySelector('#boxinside').style.position = "inherit";
+    } else {
+      document.querySelector('#boxinside').style.position = "absolute";
+    }
+}
+
+window.onresize = resize;
 </script>

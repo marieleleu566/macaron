@@ -1,5 +1,6 @@
 <div class="home">
-  <div class="parallax-window" data-parallax="scroll" data-image-src="<%= image_url('del1.jpg') %>">
+  <div class="parallax-window">
+    <%= image_tag 'del1.jpg' %>
     <div class="text">
       <p>Home Delivery</p>
       <h3>Every Saturday we deliver across<br> Hawkes Bay</h3>
@@ -8,51 +9,78 @@
       </div>
     </div>
   </div>
-  <div class="parallax-window" data-parallax="scroll" data-image-src="<%= image_url('del6.jpg') %>">
-    <div class="text-special">
-      <div class="text-inside">
-        <h3>SATURDAY HOME DELIVERY</h3>
-        <h4>Join the Family Club</h4>
-        <p>1. Text NAME & ADDRESS to <a href="tel:02108220001" style='color:#5B1B14'>02108220001</a></p>
-        <p>2. Recieve the BOOKING ONLINE link Thursday 6pm</p>
-        <p>3. Click & Order your favorite French Baking</p>
-        <p>4. Open your door & enjoy. Delivery Saturday 6am to 8:30am</p>
-        <div class="order-button">
-          <div class="button-special">
-            <a href="tel:02108220001">Order Now</a>
-          </div>
+</div>
+<div class="container-macaron">
+  <div class="photo-left">
+    <div class="photo">
+      <%= image_tag 'hand.png', height: '700px'%>
+    </div>
+    <div class="text-box">
+      <div id='boxinside-del'>
+        <div class='boxtext-delivery'>
+          <h3>AN OBESSION WITH FRESHNESS</h3><br>
+          <p>Every Saturday we deliver to all Hawke's Bay suburbs between Bay View and Hastings, directly to your door.<br><br>
+          Our home delivery service is our "MERCI" to be part of the Hawke's Bay Community. Free delivery, cheaper than town, obsessed by the perfect baking and the freshness. First in, First Served. Limited to the first 50 hours. Give it a try - you'll amazingly be well suprised by our service and our baking.
+          </p>
         </div>
       </div>
     </div>
   </div>
-  <div class="parallax-window" data-parallax="scroll" data-image-src="<%= image_url('del2.jpg') %>">
-    <div class="text">
-      <p>Saturday Morning</p>
-      <h3>freshly baked pasteries delivered<br> straight to your door</h3>
-      <div class="button">
-        <a href="/contact/new">Contact Us</a>
+</div>
+<div class="pay">
+  <h1>Home Delivery</h1>
+  <h3>✨ Saturday in Hawkes Bay ✨</h3>
+  <div class="biege">
+    <div class="home-del-info">
+      <div class="info">
+        <div class="info-specific">
+          <%= image_tag 'one.png', height:'35px' %>
+          <%= image_tag 'text.png', height:'100px' %>
+          <p>Text Me</p>
+          <p>Name & Address<br>02108220001</p>
+        </div>
+        <div class="info-specific">
+          <%= image_tag 'two.png', height:'35px' %>
+          <%= image_tag 'email.png', height:'100px' %>
+          <p>Recieve</p>
+          <p>Booking Link<br><b>Thursday 6PM</b></p>
+        </div>
+        <div class="info-specific">
+          <%= image_tag 'three.png', height:'35px' %>
+          <%= image_tag 'submit.png', height:'100px' %>
+          <p>Click & Order</p>
+          <p>Your Favorite<br>French Baking</p>
+        </div>
+        <div class="info-specific">
+          <%= image_tag 'four.png', height:'35px' %>
+          <%= image_tag 'safe.png', height:'100px' %>
+          <p>Contactless Payment</p>
+          <p>Bank Account<br>Transfer</p>
+        </div>
+        <div class="info-specific">
+          <%= image_tag 'five.png', height:'35px' %>
+          <%= image_tag 'truck.png', height:'100px' %>
+          <p>Contactless Delivery</p>
+          <p><b>Saturday<br>6-8:30am</b></p>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="parallax-window" data-parallax="scroll" data-image-src="<%= image_url('del3.jpg') %>">
-    <div class="text">
-      <p>Delivery Service</p>
-      <h3>Our home delivery service is our "MERCI"<br> for being part of the Hawke's Bay Community</h3>
-      <div class="button">
-        <a href="/contact/new">Contact Us</a>
-      </div>
-    </div>
-  </div>
-  <div class="parallax-window" data-parallax="scroll" data-image-src="<%= image_url('del4.jpg') %>">
-    <div class="text">
-      <p>Obsession with freshness</p>
-      <h3> Free delivery, cheapest in town, <br> perfect baking and crispy freshness</h3>
-      <div class="button">
-        <a href="/contact/new">Contact us</a>
-      </div>
+    <div class="button-special">
+      <a href="/contact/new">Sign Up For Delivery</a>
     </div>
   </div>
 </div>
+<script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+function resizehome () {
+  parentHeightHome = document.getElementById('boxinside-del').offsetHeight;
+    if (parentHeightHome > 200){
+      console.log(parentHeight)
+      document.querySelector('#boxinside-del').style.position = "inherit";
+    } else {
+      document.querySelector('#boxinside-del').style.position = "absolute";
+    }
+}
+
+window.onresize = resizehome;
+</script>

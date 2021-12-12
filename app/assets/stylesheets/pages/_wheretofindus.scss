@@ -1,0 +1,50 @@
+.photo-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @include from-medium-low {
+  flex-direction: row;
+  align-items: inherit;
+  justify-content: flex-start;
+  }
+}
+
+.container-macaron {
+  margin: 50px 20px;
+  position: relative;
+}
+
+.photo-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @include from-medium-low {
+  flex-direction: row;
+  align-items: inherit;
+  justify-content: flex-end;
+  }
+}
+
+#boxinside-find {
+  padding: 10px;
+  top: 10%;
+  width: 100%;
+  position: absolute;
+  background-color: white;
+  left: 20px;
+p {
+  margin-bottom: 0px;
+}
+@include from-medium {
+  top: 30%;
+  width: 50%;
+}
+}
+
+.text-box {
+  a {
+    color:  #5B1B14;
+  }
+}

@@ -50,7 +50,7 @@ body {
     justify-content: center;
     flex-direction: column;
     @include from-medium-low {
-      margin-left: 100px;
+      padding: 10px 50px;
     }
 }
 
@@ -59,13 +59,16 @@ body {
   margin-top: 50px;
   padding: 10px 20px;
   background-color: white;
+  border: 1px solid #5B1B14;
   a {
     color: #5B1B14;
     letter-spacing: 1px;
     text-decoration: none;
   }
   &:hover {
-    color: white;
+    a {
+      color: white;
+    }
     background-color:#5B1B14;
   }
 }
