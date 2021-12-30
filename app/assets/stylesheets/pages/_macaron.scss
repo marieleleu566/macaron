@@ -1,0 +1,105 @@
+.macarons {
+  display: flex;
+  justify-content: flex-start;
+  overflow: scroll;
+}
+
+.mac {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+  img {
+    height: 200px;
+  }
+  p {
+    margin-top: 10px;
+    font-weight: 500;
+    color: #5B1B14;
+    font-size: 25px;
+  }
+}
+
+.macaron-slider {
+text-align: center;
+position: relative;
+z-index: 1000;
+margin-bottom: 100px;
+}
+
+.macaron-background {
+  background-color: #F8F5F0;
+  height: 200px;
+  width: 100%;
+  position: absolute;
+  top: 170px;
+  z-index: -1;
+}
+
+.price {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: #5B1B14;
+  h5 {
+    font-weight: 300;
+  }
+  width: 300px;
+  margin: 20px 50px;
+}
+
+.price-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(macaronclose.png);
+  background-size: cover;
+  min-height: 650px;
+  padding: 50px;
+  text-align: center;
+  h1 {
+    color: white;
+    letter-spacing: 5px;
+  }
+
+  h5{
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 14px;
+  }
+  p {
+    font-size: 12px;
+  }
+}
+
+.price-boxes {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  @include from-medium {
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+}
+
+.price-head {
+  border-bottom: 1px solid #5B1B14;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+
+.price-low {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
